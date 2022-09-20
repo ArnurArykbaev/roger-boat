@@ -1,0 +1,56 @@
+/* Fonts family */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat.ttf') format('truetype');
+    font-weight: thin;
+    font-style: normal;
+    font-display: swap;
+}
+
+* { 
+    font-family: Montserrat;
+    font-size: 12px;
+}
+.container-fluid {
+    padding: 0 65px !important;
+}
+
+/* header */
+.header-navbar {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 !important;
+
+    &__email {
+        margin-left: 90px;
+    }
+
+    &__info {
+        width: 1100px;
+    }
+
+    &__contacts {
+        width: 220px;
+        &__number {
+            font-size: 14px;
+            font-weight: 900;        
+        }
+        &__social {
+            &__telegram {
+                margin-right: 5px;
+                text-decoration: none
+            }
+        }
+    }
+}
+
+.header-text {
+    padding-left: 5px;
+    font-weight: 600;
+}
+.header-info-text {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
