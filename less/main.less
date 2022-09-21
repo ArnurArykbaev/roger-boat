@@ -153,6 +153,9 @@ body {
     font-size: 13px;
     font-weight: 800;
 }
+.toast-secondbar-img {
+    margin-right: 10px;
+}
 
 .circle-badge {
     position: absolute;
@@ -163,6 +166,10 @@ body {
     width: 20px;
     height: 20px;
     background-color: #ffff;
+}
+
+.mobile-navbar {
+    display: none !important;
 }
 
 .main {
@@ -200,6 +207,7 @@ body {
                     margin-left: 50px;
                     h3 {
                         display: none;
+                        .light();
                     }
                     h4 {
                         .light();
@@ -352,6 +360,9 @@ body {
     &__info {
         display: none !important;
     }
+  }
+  .toast-secondbar-img {
+    display: none;
   }
   .main__central {
     &__bottom-block {
@@ -593,10 +604,10 @@ body {
     .container-fluid {
         padding: 5px 20px !important;
     }
-    .header-navbar__second {
-        display: none !important;
+    .mobile-navbar {
+        display: block !important;
     }
-    .header-navbar__quick__email {
+    .header-navbar {
         display: none !important;
     }
     .main {
@@ -650,9 +661,12 @@ body {
     }
 }
 @media (max-width: 450px) {
-    .menu {
-        display: flex;
-        justify-content: center !important;
+    .container-fluid {
+        padding: 2px 10px !important;
+    }
+    .header-secondbar__left {
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .header-navbar__quick__location {
         display: none;
