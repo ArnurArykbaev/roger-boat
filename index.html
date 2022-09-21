@@ -13,21 +13,26 @@
 <body>
     <nav class="header-navbar navbar">
         <div class="container-fluid">
-            <div class="header-navbar__location">
-                <a class="navbar-brand d-flex" href="#">
-                  <img src="./assets/img/cities.svg" alt="location" width="14" height="14">
-                  <div class="header-text">Москва</div>
-                </a>
+            <div class="header-navbar__quick">
+                <div class="header-navbar__quick__location">
+                    <a class="navbar-brand d-flex" href="#">
+                      <img src="./assets/img/cities.svg" alt="location" width="14" height="14">
+                      <div class="header-text">Москва</div>
+                    </a>
+                </div>
+                <div class="header-navbar__quick__email">
+                    <a class="navbar-brand d-flex" href="#">
+                        <img src="./assets/img/email.svg" alt="location" width="14" height="14">
+                        <div class="header-text">info@roger-boat.ru</div>
+                      </a>
+                </div>
             </div>
 
-            <div class="header-navbar__email">
-                <a class="navbar-brand d-flex" href="#">
-                    <img src="./assets/img/email.svg" alt="location" width="14" height="14">
-                    <div class="header-text">info@roger-boat.ru</div>
-                  </a>
-            </div>
+            <div class="header-navbar__burger">
+                Меню
+            </div>            
 
-            <div class="header-navbar__info d-flex justify-content-around">
+            <div class="header-navbar__info">
                 <div class="header-navbar__info__page">
                     <div class="header-info-text">О компаниии</div>
                 </div>
@@ -141,27 +146,69 @@
 
             </div>
 
-            <div class="main__central">
+            <div class="main__central flex-grow-1">
                 <div class="main__central__main-block">
                     <div class="main__central__main-block__advert">
-                        <img src="./assets/img/person-boat.png" alt="">
+                        <div class="main__central__main-block__advert__offer">
+                            <h3>Моторная лодка ПВХ Zefir 3100 LT (малокиелевая)</h3>
+                            <h4>Моторная лодка </br>ПВХ Zefir 3100 LT (малокиелевая)</h4>
+                            <div class="main__central__main-block__advert__offer__price-old">43 700 ₽</div>
+                            <div class="main__central__main-block__advert__offer__price-new">43 700 ₽</div>
+
+                            <div class="main__central__main-block__advert__offer__make-offer">
+                                <button type="button" class="btn btn-outline-primary">ОФОРМИТЬ ЗАКАЗ</button>
+                                <div>                                       
+                                    <img class="left-arrow" src="./assets/img/last.svg" alt="">
+                                    <img class="right-arrow" src="./assets/img/next.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="person-boat" src="./assets/img/person-boat.png" alt="">
+                        <img class="person-boat-img" src="./assets/img/person-boat-img.png" alt="">
+                    </div>
+                    <div class="main__central__main-block__sale">
+                        <img src="./assets/img/boat-sale.png" alt="">
                     </div>
                 </div>
-                <div class="main__central__bottom-block d-flex">
+                <div class="main__central__bottom-block">
 
-                    <div class="main__central__bottom-block__quality">
+                    <div class="main__central__bottom-block__quality orders">
                         <div class="main__central__bottom-block__quality__block">
-                            <h5 class="block-header">БЫСТРЫЙ ЗАКАЗ</h5>
+                            <h5 class="block-header">БЫСТРЫЙ </br> ЗАКАЗ</h5>
                             <p>Укажите номер телефона,</br>мы позвоним вам </br> и оформим заказ за вас</p>
                         </div>
                         <img src="./assets/img/telephone.png" alt="">
+                    </div>
+
+                    <div class="main__central__bottom-block__quality terms">
+                        <div class="main__central__bottom-block__quality__block">
+                            <h5 class="block-header">СОБЛЮДАЕМ </br> СРОКИ</h5>
+                            <p>Точно и вовремя</p>
+                        </div>
+                        <img src="./assets/img/clocks.png" alt="">
+                    </div>
+
+                    <div class="main__central__bottom-block__quality manufacturer">
+                        <div class="main__central__bottom-block__quality__block">
+                            <h5 class="block-header">МЫ ПРОИЗВОДИТЕЛИ </br>ЛОДОК</h5>
+                            <p>Гарантия качества</br>лодок </br>от производителя</p>
+                        </div>
+                        <img src="./assets/img/boat2.png" alt="">
+                    </div>
+
+                    <div class="main__central__bottom-block__quality sales">
+                        <div class="main__central__bottom-block__quality__block">
+                            <h5 class="block-header">НАШИ АКЦИИ </br>И СПЕЦИАЛЬНЫЕ </br>ПРЕДЛОЖЕНИЯ</h5>
+                        </div>
+                        <img src="./assets/img/sale.png" alt="">
                     </div>
 
                 </div>
             </div>
 
             <div class="main__right-navbar">
-
+                <img src="./assets/img/calc.svg" alt="">
             </div>
 
         </div>
