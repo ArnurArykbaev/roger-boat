@@ -1,8 +1,25 @@
 /* Fonts family */
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../font/Montserrat.ttf') format('truetype');
-  font-weight: thin;
+  font-family: 'Montserrat_thin';
+  src: url('../font/Montserrat-Thin.eot');
+  src: url('../font/Montserrat-Thin.eot?#iefix') format('embedded-opentype'), url('../font/Montserrat-Thin.woff2') format('woff2'), url('../font/Montserrat-Thin.woff') format('woff'), url('../font/Montserrat-Thin.ttf') format('truetype'), url('../font/Montserrat-Thin.svg#Montserrat-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat_light';
+  src: url('../font/Montserrat-Light.eot');
+  src: url('../font/Montserrat-Light.eot?#iefix') format('embedded-opentype'), url('../font/Montserrat-Light.woff2') format('woff2'), url('../font/Montserrat-Light.woff') format('woff'), url('../font/Montserrat-Light.ttf') format('truetype'), url('../font/Montserrat-Light.svg#Montserrat-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat_bold';
+  src: url('../font/Montserrat-Bold.eot');
+  src: url('../font/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Montserrat-Bold.woff2') format('woff2'), url('../font/Montserrat-Bold.woff') format('woff'), url('../font/Montserrat-Bold.ttf') format('truetype'), url('../font/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -14,10 +31,11 @@
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9aX8.ttf) format('truetype');
 }
 body {
+  font-family: 'Montserrat_bold', sans-serif;
   background-color: #FAF8F9 !important;
 }
 * {
-  font-family: Montserrat;
+  font-family: 'Montserrat_bold', sans-serif;
   font-size: 12px;
   font-weight: 900;
 }
@@ -38,13 +56,13 @@ body {
   display: flex;
 }
 .header-navbar__quick__location :hover {
-  color: rgba(0, 0, 0, 0.133);
+  color: #E31E25 !important;
 }
 .header-navbar__quick__email {
   margin-left: 90px;
 }
 .header-navbar__quick__email a:hover {
-  color: rgba(0, 0, 0, 0.133);
+  color: #E31E25  !important;
 }
 .header-navbar__burger {
   display: none;
@@ -59,7 +77,7 @@ body {
   width: 1090px;
 }
 .header-navbar__info :hover {
-  color: rgba(0, 0, 0, 0.133);
+  color: #E31E25 ;
 }
 .header-navbar__contacts {
   display: -webkit-box;
@@ -82,15 +100,11 @@ body {
   cursor: pointer;
   margin-top: 20px;
 }
-.header-secondbar__left .toast-img {
-  cursor: pointer;
-  margin-right: 10px;
-}
 .header-secondbar__left__about {
   cursor: pointer;
   width: 230px;
   font-size: 9px;
-  font-weight: 600;
+  font-family: 'Montserrat_thin', sans-serif;
   line-height: 1.4;
   margin-left: 32px;
 }
@@ -117,14 +131,22 @@ body {
 }
 .header-text {
   padding-left: 5px;
-  font-weight: 600;
+  font-family: 'Montserrat_thin', sans-serif;
 }
 .header-info-text {
   font-size: 13px;
   font-weight: 800;
 }
-.toast-img {
-  margin-right: 10px;
+.circle-badge {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffff;
 }
 .main__left-navbar {
   margin-top: 25px;
@@ -135,17 +157,17 @@ body {
   margin-bottom: 20px;
 }
 .main__left-navbar__sales-sections:hover {
-  color: rgba(44, 44, 44, 0.133);
+  color: #E31E25 ;
 }
 .main__left-navbar__info {
   margin-top: 40px;
 }
 .main__left-navbar__info__adress {
-  font-weight: 300;
+  font-family: 'Montserrat_thin', sans-serif;
   margin-bottom: 27px;
 }
 .main__left-navbar__info__work-time {
-  font-weight: 300;
+  font-family: 'Montserrat_thin', sans-serif;
 }
 .main__central {
   margin-left: 30px;
@@ -163,14 +185,13 @@ body {
   display: none;
 }
 .main__central__main-block__advert__offer h4 {
-  font-size: 20px;
-  font-weight: 200;
+  font-family: 'Montserrat_light', sans-serif;
 }
 .main__central__main-block__advert__offer__price-old {
   font-size: 30px;
   margin-top: 25px;
   text-decoration: line-through;
-  font-weight: 400;
+  font-family: 'Montserrat_thin', sans-serif;
 }
 .main__central__main-block__advert__offer__price-new {
   font-size: 55px;
@@ -272,12 +293,9 @@ body {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.main__central__bottom-block__quality__block h5 {
-  font-weight: 700;
-}
 .main__central__bottom-block__quality__block p {
   font-size: 14px;
-  font-weight: 300;
+  font-family: 'Montserrat_thin', sans-serif;
 }
 .main__central__bottom-block__quality:hover {
   cursor: pointer;
