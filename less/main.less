@@ -174,7 +174,12 @@ body {
 
 .main {
     &__left-navbar {
+        position: absolute;
+        background-color: #FAF8F9;
         margin-top: 25px;
+        left: 0;
+        padding: 0 70px 70px 70px;
+        z-index: 100;
         &__sales-sections {
             cursor: pointer;
             font-size: 13px;
@@ -338,7 +343,7 @@ body {
     color: #c04341;
 }
 .orders {
-    background-color: #EBEBEB;
+    background-color: #FAF8F9;
 }
 .terms {
     background-color: #FFCF25;
@@ -611,6 +616,10 @@ body {
         display: none !important;
     }
     .main {
+        &__left-navbar {
+            margin-top: 0;
+            padding: 0px 20px 20px 20px;
+        }
         &__central {
             &__main-block {
                 &__advert {
@@ -676,8 +685,5 @@ body {
     }
     .main__central {
         margin-left: 0;
-    }
-    .main__left-navbar {
-        display: none !important;
     }
 }
